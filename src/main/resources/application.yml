@@ -1,0 +1,18 @@
+server:
+  port: 8879
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-doc:
+    path: /api-doc
+  show-actuator: true
+
+spring:
+  application:
+    name: demoMongoDB
+
+  data:
+    mongodb:
+      #mongodb://<username>:<password>@<host>:<port>/<database>?authSource=admin
+      uri: mongodb://admin:admin123@localhost:27017/mongodbTest?authSource=admin
